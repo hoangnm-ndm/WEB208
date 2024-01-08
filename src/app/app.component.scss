@@ -9,4 +9,16 @@ form {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
   margin: 100px auto 0;
   padding: 32px;
+  input,
+  label {
+    width: 100%;
+  }
+  input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  button {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  }
 }
