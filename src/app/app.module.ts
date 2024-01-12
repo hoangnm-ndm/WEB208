@@ -9,6 +9,8 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
+import { StartComponent } from './components/start/start.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { ProductListComponent } from './components/product-list/product-list.com
     LoginComponent,
     RegisterComponent,
     ProductListComponent,
+    StartComponent,
+    ContactComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

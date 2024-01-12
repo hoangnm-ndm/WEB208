@@ -4,7 +4,7 @@
       <!-- <img src="..." class="card-img-top" alt="..." /> -->
       <div class="card-body">
         <h5 class="card-title">{{ product.name | uppercase }}</h5>
-        <p>{{ product.price | currency : "VND" : "symbol" : "1.0-0" }}</p>
+        <p>{{ product.price | currency : "VND" : "code" : "1.0-0" }}</p>
         <p class="card-text">
           {{ product.desc }}
         </p>
