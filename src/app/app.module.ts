@@ -11,6 +11,14 @@ import { RegisterComponent } from './pages/register/register.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { StartComponent } from './components/start/start.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const appRoutes: Routes = [
+  { path: '/', component: HomePageComponent },
+  { path: '/about', component: AboutPageComponent },
+  { path: '/contact', component: ContactComponent },
+];
 
 @NgModule({
   declarations: [
@@ -24,7 +32,14 @@ import { ContactComponent } from './pages/contact/contact.component';
     StartComponent,
     ContactComponent,
   ],
-  imports: [BrowserModule, FormsModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } // <-- debugging purposes only
+    ),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
