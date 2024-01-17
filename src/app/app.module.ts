@@ -13,6 +13,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ShopPageComponent } from './pages/shop-page/shop-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
@@ -39,10 +40,8 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
-    ),
+    HttpClientModule,
+    RouterModule.forRoot(appRoutes, { enableTracing: true }),
   ],
   providers: [],
   bootstrap: [AppComponent],
