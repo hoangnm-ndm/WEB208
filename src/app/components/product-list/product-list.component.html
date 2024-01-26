@@ -1,5 +1,5 @@
 <div *ngIf="products && products.length">
-  <div *ngFor="let product of products">
+  <div *ngFor="let product of products" class="product-list">
     <div class="card" style="width: 18rem">
       <img
         src="{{ product.thumbnail }}"
