@@ -14,6 +14,7 @@ import { ShopPageComponent } from './pages/shop-page/shop-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductFormComponent } from './pages/admin/product-form/product-form.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
@@ -36,6 +37,7 @@ const appRoutes: Routes = [
     ContactComponent,
     ShopPageComponent,
     NotFoundPageComponent,
+    ProductFormComponent,
   ],
   imports: [
     BrowserModule,
