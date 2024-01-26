@@ -1,6 +1,6 @@
 <h1>Hello, Admin</h1>
 <button class="btn btn-primary">Create New</button>
-<table>
+<table class="table table-bordered table-striped">
   <thead>
     <tr>
       <th>ID</th>
@@ -16,7 +16,13 @@
       <td>{{ product.id }}</td>
       <td>{{ product.title }}</td>
       <td>{{ product.price }}</td>
-      <td>{{ product.thumbnail }}</td>
+      <td>
+        <img
+          width="100"
+          src="{{ product.thumbnail }}"
+          alt="{{ product.title }}"
+        />
+      </td>
       <td>{{ product.description }}</td>
       <td>
         <button class="btn btn-warning">Edit</button>

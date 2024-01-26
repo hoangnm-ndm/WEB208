@@ -3,18 +3,18 @@ import { Product } from 'src/app/interfaces/product';
 import { ProductService } from 'src/app/services/products.service';
 
 @Component({
-  selector: 'app-product-list',
-  templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.scss'],
+  selector: 'app-admin-product-list',
+  templateUrl: './admin-product-list.component.html',
+  styleUrls: ['./admin-product-list.component.scss'],
 })
-export class ProductListComponent {
+export class AdminProductListComponent {
   product: Product = {
     title: '',
     price: 0,
     description: '',
   };
   products: Product[] = [];
-  productId: number = 0;
+  productId?: number | undefined = 0;
 
   constructor(private productService: ProductService) {}
 
@@ -28,5 +28,5 @@ export class ProductListComponent {
     });
   }
 
-  deleteProduct(productId: number) {}
+  deleteProduct(productId: number | undefined) {}
 }
