@@ -1,6 +1,6 @@
-<div *ngIf="products && products.length">
-  <div *ngFor="let product of products" class="product-list">
-    <div class="card" style="width: 18rem">
+<div *ngIf="products && products.length" class="product-list">
+  <div *ngFor="let product of products">
+    <div class="card product-card" style="width: 18rem">
       <img
         src="{{ product.thumbnail }}"
         class="card-img-top"
@@ -8,7 +8,7 @@
       />
       <div class="card-body">
         <h5 class="card-title">{{ product.title }}</h5>
-        <p>{{ product.price | currency : "VND" : "code" : "1.0-0" }}</p>
+        <p>{{ product.price | currency : "USD" : "symbol" : "1.0-0" }}</p>
         <p class="card-text">
           {{ product.description }}
         </p>
