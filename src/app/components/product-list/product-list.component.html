@@ -12,9 +12,9 @@
         <p class="card-text">
           {{ product.description }}
         </p>
-        <a routerLink="['products', product.id ]" class="btn btn-primary"
-          >View detail</a
-        >
+        <a routerLink="/products/{{ product.id }}">Details</a> |
+        <a routerLink="/products/edit/{{ product.id }}">Edit</a> |
+        <a (click)="deleteProduct(product.id)">Delete</a>
       </div>
     </div>
   </div>

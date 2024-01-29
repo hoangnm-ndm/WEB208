@@ -27,4 +27,10 @@ export class ProductListComponent {
       this.products = products;
     });
   }
+
+  deleteProduct(productId: number | undefined) {
+    this.productService.deleteProduct(productId)?.subscribe(() => {
+      this.loadProducts();
+    });
+  }
 }

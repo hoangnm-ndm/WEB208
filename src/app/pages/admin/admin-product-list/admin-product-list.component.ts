@@ -28,5 +28,9 @@ export class AdminProductListComponent {
     });
   }
 
-  deleteProduct(productId: number | undefined) {}
+  deleteProduct(id: number | undefined) {
+    this.productService.deleteProduct(id).subscribe(() => {
+      this.loadProducts();
+    });
+  }
 }
