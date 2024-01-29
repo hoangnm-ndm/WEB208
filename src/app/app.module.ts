@@ -10,7 +10,6 @@ import { RegisterComponent } from './pages/register/register.component';
 import { AdminProductListComponent } from './pages/admin/admin-product-list/admin-product-list.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
-
 import { ShopPageComponent } from './pages/shop-page/shop-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
@@ -20,7 +19,7 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { ProductDetailComponent } from './pages/admin/product-detail/product-detail.component';
 
 const appRoutes: Routes = [
-  { path: '', component: AppComponent },
+  { path: '', component: HomePageComponent },
   { path: 'shop', component: ShopPageComponent },
   { path: 'about', component: AboutPageComponent },
   { path: 'contact', component: ContactComponent },
