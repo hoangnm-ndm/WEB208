@@ -1,42 +1,62 @@
 <!-- product-form.component.html -->
 <div>
   <h2>{{ isEditMode ? "Edit Product" : "Add Product" }}</h2>
-  <form (ngSubmit)="saveProduct()">
-    <label for="title">Title:</label>
-    <input
-      type="text"
-      id="title"
-      [(ngModel)]="product.title"
-      name="title"
-      required
-    />
+  <form id="product-form" (ngSubmit)="saveProduct()">
+    <div class="form-group">
+      <label for="title">Title:</label>
+      <input
+        type="text"
+        id="title"
+        [(ngModel)]="product.title"
+        name="title"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="title">Title:</label>
+      <input
+        type="text"
+        id="title"
+        [(ngModel)]="product.title"
+        name="title"
+        required
+      />
+    </div>
 
-    <label for="price">Price:</label>
-    <input
-      type="number"
-      id="price"
-      [(ngModel)]="product.price"
-      name="price"
-      required
-    />
-    <label for="description">Description:</label>
-    <input
-      type="text"
-      id="description"
-      [(ngModel)]="product.description"
-      name="description"
-      required
-    />
+    <div class="form-group">
+      <label for="price">Price:</label>
+      <input
+        type="number"
+        id="price"
+        [(ngModel)]="product.price"
+        name="price"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="description">Description:</label>
+      <input
+        type="text"
+        id="description"
+        [(ngModel)]="product.description"
+        name="description"
+        required
+      />
+    </div>
 
-    <label for="thumbnail">Thumnail:</label>
-    <input
-      type="string"
-      id="thumbnail"
-      [(ngModel)]="product.thumbnail"
-      name="thumbnail"
-      required
-    />
+    <div class="form-group">
+      <label for="thumbnail">Thumnail:</label>
+      <input
+        type="string"
+        id="thumbnail"
+        [(ngModel)]="product.thumbnail"
+        name="thumbnail"
+        required
+      />
+    </div>
 
-    <button type="submit">{{ isEditMode ? "Update" : "Add" }} Product</button>
+    <button type="submit" class="btn btn-primary btn-submit">
+      {{ isEditMode ? "Update" : "Add" }} Product
+    </button>
   </form>
 </div>
