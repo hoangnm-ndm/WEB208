@@ -1,1 +1,11 @@
-<p>product-detail works!</p>
+<h2>Product Detail:</h2>
+<div class="product-detail">
+  <div class="product-detail__thumbnail">
+    <img width="400px" [src]="product.thumbnail" alt="product.title" />
+  </div>
+  <div class="product-detail__info">
+    <h3>{{ product.title }}</h3>
+    <p>{{ product.description }}</p>
+    <p>Giá: {{ product.price | currency }}</p>
+  </div>
+</div>
