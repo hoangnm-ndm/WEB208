@@ -17,7 +17,7 @@
       <td>
         <a routerLink="detail/{{ product.id }}">{{ product.title }}</a>
       </td>
-      <td>{{ product.price }}</td>
+      <td>{{ product.price | currency : "USD" : "symbol" : "1.2-2" }}</td>
       <td>
         <img
           width="100"

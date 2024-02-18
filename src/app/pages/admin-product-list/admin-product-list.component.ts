@@ -29,8 +29,14 @@ export class AdminProductListComponent {
   }
 
   deleteProduct(id: number | undefined) {
-    this.productService.deleteProduct(id).subscribe(() => {
-      this.loadProducts();
-    });
+    const isConfirmed = window.confirm(
+      'Are you sure you want to delete this product?'
+    );
+
+    if (isConfirmed) {
+      this.productService.deleteProduct(id).subscribe(() => {
+        this.loadProducts();
+      });
+    }
   }
 }
