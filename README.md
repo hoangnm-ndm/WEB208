@@ -1,27 +1,51 @@
-# WD18204V16
+- Lấy base dự án về máy tính cá nhân và thực hiện bài làm trên chính base dự án này.
+- Không tắt vscode trong quá trình thực hiện bài làm
+- Chỉ mở một cửa sổ vscode duy nhất để làm bài.
+- Tắt các ứng dụng truyền tin hoặc view màn hình như desktop remote, teamviewer, anydesk, zalo, facebook, skype, slack, discord, obs ...
+- Không sử dụng các trang web hỗ trợ như google, stackoverflow, w3school, ... (trừ khi được yêu cầu)
+- Không sử dụng các ứng dụng AI và các extentions có sự tham gia gợi ý code của AI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.11.
+```
+npm install
+npm start
+```
 
-## Development server
+### 1: Hiển thị danh sách sản phẩm bao gồm: (2đ)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- ID sản phẩm
+- Tên sản phẩm
+- Giá sản phẩm
+- Mô tả sản phẩm
+- Nút bấm sửa và xoá cho từng sản phẩm
 
-## Code scaffolding
+### 2: Thêm sản phẩm (1đ)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Thêm sản phẩm thành công (1đ)
 
-## Build
+### 3: Sửa sản phẩm (2đ)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Thêm thông tin cũ của sản phẩm vào form(1đ)
+- Thay đổi thông tin sản phẩm và lưu thành công (1đ)
 
-## Running unit tests
+### 4: Xoá sản phẩm (2đ)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Confirm khi xoá sản phẩm. (1đ)
+- Xoá thành công. (1đ)
 
-## Running end-to-end tests
+### 5: Xem chi tiết (1đ)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Hiển thị chi tiết sản phẩm khi click vào sản phẩm.
+- Yêu cầu đầy đủ các thông tin sau: tên, giá, mô tả, ảnh sản phẩm.
 
-## Further help
+### 5: Validation (1đ)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Kiểm tra dữ liệu nhập vào form thêm và sửa sản phẩm như sau:
+  - Tên không được bỏ trống
+  - Giá không được bỏ trống và phải là số dương
+  - Mô tả không được bỏ trống
+
+### 5: Giao diện đẹp (1đ)
+
+- Có thể dùng bootstrap, tailwindcss, hoặc css thuần
+
+**Lưu ý: Sử dụng typescript để khai báo**
